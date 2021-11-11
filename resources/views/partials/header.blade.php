@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="">BOOL-COMICS</a>
+        <a class="navbar-brand" href="{{route('home')}}">BOOL-COMICS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,7 +11,7 @@
                     <a class="nav-link" href="{{route("comics.index")}}">Tutti i Comics <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Aggiungi un Comic</a>
+                    <a class="nav-link" href="{{route("comics.create")}}">Aggiungi un Comic</a>
                 </li>
             </ul>
         {{-- <form class="form-inline my-2 my-lg-0">
