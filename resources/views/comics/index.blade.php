@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'COMICS - HOME')
+@section('title', 'All comics')
 
 @section('content')
 
@@ -27,7 +27,7 @@
                 <td>{{$comic['sale_date']}}</td>
                 <td>{{$comic['type']}}</td>
                 <td>
-
+                    <a href=""><button type="button" class="btn btn-primary">Visualizza</button></a>
                 </td>
             </tr> 
         @endforeach
