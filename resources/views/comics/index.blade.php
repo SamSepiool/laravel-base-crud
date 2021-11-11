@@ -37,7 +37,7 @@
                         <a href="{{route('comics.edit', $comic['id'])}}"><button type="button" class="btn btn-warning">Modifica</button></a>                    
                     </td>
                     <td>
-                        <form action="{{route('comics.destroy', $comic['id'])}}" method="POST">
+                        <form action="{{route('comics.destroy', $comic['id'])}}" method="POST" onsubmit="return confirm('Are you sure to delete {{$comic['title']}} ?')">
                             @csrf
                             {{-- DELETE METHOD --}}
                             @method('DELETE')
