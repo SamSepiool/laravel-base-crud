@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<form action="" method="POST">
+<form action="{{route('comics.store')}}" method="POST">
     <h1 class="text-center">AGGIUNGI UN FUMETTO</h1>
     @csrf
     <div class="form-group">
